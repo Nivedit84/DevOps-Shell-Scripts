@@ -2,3 +2,4 @@
 
 1. server-stats.sh --> A script to get the server statistics like CPU usage, Memory usage, Disk filesystem usage, top 5 processes by memory and CPU and load average of the server.
 # Project URL: https://roadmap.sh/projects/server-stats
+2. user-accoutn-report.sh --> parses through /etc/passwd file and gives a list of actual users, their home directories and default login shells.
