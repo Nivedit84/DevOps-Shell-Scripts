@@ -3,7 +3,7 @@
 # Default threshold
 Trigger=80
 
-# Get current memory usage percentage (excluding buffers/cache)
+# Current memory usage
 USAGE=$(free | awk '/Mem:/ {printf("%.0f"), ($3/$2)*100}')
 
 echo "Current memory usage: $USAGE%"
