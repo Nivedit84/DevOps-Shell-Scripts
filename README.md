@@ -5,3 +5,4 @@
 3. bulk-user-creation.sh --> Creates multiple users in bulk from a txt file using for loop, generates a random password for them, sets password for them, asks to change password at next login, and writes the name:password to a file.
 4. file-backup.sh --> Takes a directory as an input then archives and compresses and also customizes the name of the file/directory with timestamp.\
 5. service-status-checker --> Takes a service name as input and gives the status of that service (unknown, inactive, active)
+6. memory-usage-alert.sh --> Checks current memory usage percentage and alerts if usage exceeds a specified threshold (default is 80%).
