@@ -6,7 +6,8 @@ echo "CPU Usage: ${cpu_usage}%"
 echo "============================"
 
 # Memory Usage
-mem_usage=$( free | awk 'NR==2 {printf "%.2f\n", (($3 - $6) / $2) * 100 }' )
+#mem_usage=$( free | awk 'NR==2 {printf "%.2f\n", (($3 - $6) / $2) * 100 }' ) 
+mem_usage=$( free | awk 'NR==2 {printf "0.2f\n", (($2 - $7) / $2) * 100 }')
 echo "Memory Usage: ${mem_usage}%"
 echo "============================"
 
