@@ -6,3 +6,4 @@
 4. file-backup.sh --> Takes a directory as an input then archives and compresses and also customizes the name of the file/directory with timestamp.\
 5. service-status-checker --> Takes a service name as input and gives the status of that service (unknown, inactive, active)
 6. log-cleaner.sh --> Navigate /var/log directory, finds files with .log extension and deletes .log files older than 10 days
+7. disk-usage-alert.sh --> get the total disk usage then runs an if condition to check whether usage crossed the threshold or not
