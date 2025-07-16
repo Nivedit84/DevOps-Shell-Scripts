@@ -12,7 +12,7 @@ echo "Memory Usage: ${mem_usage}%"
 echo "============================"
 
 # Disk Usage
-disk_usage=$( df --block-size=1 | grep -v "tmpfs" | awk 'NR>1 {used+=$3; total+=$4} END {printf "%.2f\n", (used / total) * 100 }' )
+disk_usage=$( df --block-size=1 | grep -v "tmpfs" | awk 'NR>1 {used+=$3; total+=$2} END {printf "%.2f\n", (used / total) * 100 }' )
 echo "Disk Usage: ${disk_usage}%"
 echo "============================"
 
