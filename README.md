@@ -18,3 +18,5 @@
 8. process-killer.sh --> Gets all the processes, checks for cpu and mem, if above a certain threshold, terminates the process.
 
 9. ssh-login-alert.sh --> Gets the users who logged in to the server with what ip and at what time.
+
+10. improved-ssh-login-alert.sh --> This version of script uses journalctl and a function to send alerts to the screen, rest logic remains same
