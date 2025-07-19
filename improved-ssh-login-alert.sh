@@ -12,10 +12,6 @@ send_alert() {
     local time=$3
     local msg="SSH Login: $user from $ip at $time"
     echo "$msg" >> "$LOG_FILE"
-    if command -v $NOTIFY_CMD >/dev/null 2>&1; then
-        $NOTIFY_CMD "SSH Login Alert" "$msg"
-    fi
-    # echo "$msg" | mail -s "SSH Login Alert" you@example.com
 }
 
 journalctl -u ssh --since "now" -f | while read -r line; do
