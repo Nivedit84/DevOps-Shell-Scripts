@@ -21,4 +21,4 @@
 
 10. improved-ssh-login-alert.sh --> This version of script uses journalctl and a function to send alerts to the screen, rest logic remains same.
 
-11. nginx-log-analyser.sh --> Analyses nginx log file and returns top 5 IP addresses, top 5 requested paths, and top 5 status codes.
+11. nginx-log-analyser.sh --> Analyses nginx log file and returns top 5 IP addresses, top 5 requested paths, and top 5 status codes. (https://roadmap.sh/projects/nginx-log-analyser)
