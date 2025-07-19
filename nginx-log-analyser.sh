@@ -16,7 +16,7 @@ REQUESTED_PATHS=$(cat $LOG_FILE | sed -n 's/.*\(GET\|\POST|\PUT|\DELETE\) \([^ ]
 echo "Top 5 paths"
 echo $REQUESTED_PATHS
 echo
-STATUS_CODES=$(cat $LOG_FILE | awk '{print $9}' | sort | uniq -c | sort -nr | head -n 6)
+STATUS_CODES=$(cat $LOG_FILE | awk '{print $9}' | sort | uniq -c | sort -nr | head -n 5)
 echo "Top status codes"
 echo $STATUS_CODES
 echo
