@@ -23,3 +23,5 @@
 11. nginx-log-analyser.sh --> Analyses nginx log file and returns top 5 IP addresses, top 5 requested paths, and top 5 status codes. (https://roadmap.sh/projects/nginx-log-analyser)
 
 12. network-troubleshooter.sh --> Pings a list of servers and checks for connectivity using ping command and for loop.
+
+13. disk-usage-report.sh --> Checks the disk usage of each file a directory, onyl checks the top-level directories or files inside a directory and gives the output in a decreasing order.
