@@ -6,8 +6,7 @@
    
 3. bulk-user-creation.sh --> Creates multiple users in bulk from a txt file using for loop, generates a random password for them, sets password for them, asks to change password at next login, and writes the name:password to a file.
    
-4. file-backup.sh --> Takes a directory as an input then archives and compresses and also customizes the name of the file/directory with timestamp. (https://roadmap.sh/projects/log-archive-tool)
-                      To create this as a command, add the script absolute path of PATH variable using export command.
+4. file-backup-improved.sh --> Takes the backup of a file with timestamp, stores it in the desired location, and deletes the backup which was taken 7 days ago. 
 
 5. service-status-checker --> Takes a service name as input and gives the status of that service (unknown, inactive, active)
 
