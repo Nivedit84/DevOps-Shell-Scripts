@@ -27,3 +27,5 @@
 13. disk-usage-report.sh --> Checks the disk usage of each file a directory, onyl checks the top-level directories or files inside a directory and gives the output in a decreasing order.
 
 14. firewall-automation.sh --> Uses iptables to set up rules for allowing incoming SSH, HTTP and HTTPS traffic.
+
+15. port-scanner.sh --> Scans a file for list of ports and tells which ports are open or closed.
