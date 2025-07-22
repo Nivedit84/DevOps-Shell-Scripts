@@ -25,3 +25,5 @@
 12. network-troubleshooter.sh --> Pings a list of servers and checks for connectivity using ping command and for loop.
 
 13. disk-usage-report.sh --> Checks the disk usage of each file a directory, onyl checks the top-level directories or files inside a directory and gives the output in a decreasing order.
+
+14. firewall-automation.sh --> Uses iptables to set up rules for allowing incoming SSH, HTTP and HTTPS traffic.
