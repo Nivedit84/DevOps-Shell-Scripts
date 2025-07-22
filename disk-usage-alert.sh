@@ -1,10 +1,11 @@
 #!/bin/bash
 
-DISK_USAGE=$( df --block-size=1 | awk 'NR>1 {total+=$2; used+=$3} END {printf "%.0f\n", ( used / total ) * 100 }')
+disk_usage=$(df --block-size=1 | grep -v "tmpfs" | awk 'NR>1 {total+=$2; used+=$3} END {printf "%.2f\n", ( used / total) * 100}')
+echo $disk_usage
+
 THRESHOLD=80
-if (($DISK_USAGE > $THRESHOLD))
-then
-        echo "Disk usage crossed threshold"
+if [[ $disk_usage > $THRESHOLD]]; then
+    echo "Disk is being over utilised"
 else
-        echo "Disk usage is below thresold"
+    echo "Disk is being under utilised"
 fi
