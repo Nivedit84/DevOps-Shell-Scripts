@@ -4,7 +4,7 @@
 
 2. user-accoutn-report.sh --> parses through /etc/passwd file and gives a list of actual users, their home directories and default login shells.
    
-3. bulk-user-creation.sh --> Creates multiple users in bulk from a txt file using for loop, generates a random password for them, sets password for them, asks to change password at next login, and writes the name:password to a file.
+3. bulk-user-creation.sh --> Creates multiple users in bulk from a txt file using for loop, generates a random password for them, sets password for them, asks to change password at next login, and writes the name:password to a file. (Usage : need a file with names written on separate lines, run using "bash bulk-user-creation.sh")
    
 4. file-backup-improved.sh --> Takes the backup of a file with timestamp, stores it in the desired location, and deletes the backup which was taken 7 days ago. 
 
