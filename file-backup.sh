@@ -1,20 +1,21 @@
 #!/bin/bash
 
-OUTPUT_DIRECTORY=$2
-
-if [ -z "$1" ]
-then
-        echo "USAGE: $0 <Directory to compress> <Directory to move the compressed file>"
-        exit 1
+#Checks whether arguments are there or not, if not tells the script usage
+if [[ -z "$1" || -z "$2" ]]; then
+    echo "Usage : $0 <where to store> <what to compress>"
+    exit 1
 fi
-DIR=$1
+
+OUTPUT_DIR=$1
+INPUT=$2
+
 TIMESTAMP=$(date +"%Y-%m-%d_%H:%M:%S")
-ARCHIVE_NAME="${DIR}_$TIMESTAMP.tar.gz"
+ARCHIVE_NAME="${INPUT}_$TIMESTAMP.tar.gz"
 
-tar -czf "$ARCHIVE_NAME" "$DIR"
+#Archives and compresses the file or dir
+tar -czf "$ARCHIVE_NAME" "$INPUT"
 
-if [ -n "$OUTPUT_DIRECTORY" ]
-then
-        mv $ARCHIVE_NAME ${OUTPUT_DIRECTORY}
-        echo "Compressed file has been moved to ${OUTPUT_DIRECTORY}${ARCHIVE_NAME}"
+#If output dir is correct then moves the file/dir to the desired location
+if [ -d "$OUTPUT_DIR"]; then
+    mv "$ARCHIVE_NAME" "$OUTPUT_DIR"
 fi
