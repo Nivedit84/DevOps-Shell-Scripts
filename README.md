@@ -29,3 +29,5 @@
 14. firewall-automation.sh --> Uses iptables to set up rules for allowing incoming SSH, HTTP and HTTPS traffic.
 
 15. port-scanner.sh --> Scans a file for list of ports and tells which ports are open or closed.
+
+16. file-integrity-checker.sh --> checks the integrity of a file, whether it has been changed or not by comparing the hash codes.
