@@ -10,8 +10,6 @@ tar -czf "$BACKUP_DIR" "$INPUT_DIR"
 mv $BACKUP_DIR $OUTPUT_DIR
 echo "BACKUP of $INPUT_DIR has been created and stored at $OUTPUT_DIR"
 
-if [ -e $BACKUP_DIR ]
-then
-        file_backup=$(find "$OUTPUT_DIR" -type f -mtime 7)
-        rm $file_backup
-fi
+file_backup=$(find "$OUTPUT_DIR" -type f -mtime 7)
+rm $file_backup
+
