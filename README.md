@@ -30,4 +30,4 @@
 
 15. port-scanner.sh --> Scans a file for list of ports and tells which ports are open or closed.
 
-16. file-integrity-checker.sh --> checks the integrity of a file, whether it has been changed or not by comparing the hash codes.
+16. file-integrity-checker.sh --> checks the integrity of a file, whether it has been changed or not by comparing the hash codes, also prompts whether to update the old checksum to latest checksum to match the hashes and ready the script for next run. Usage: sudo bash <script>
