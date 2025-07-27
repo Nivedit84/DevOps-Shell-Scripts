@@ -1,7 +1,6 @@
 #!/bin/bash
 
 LOG_FILE="/var/log/ssh_login_alert.log"
-NOTIFY_CMD="notify-send"
 
 touch "$LOG_FILE"
 chmod 600 "$LOG_FILE"
