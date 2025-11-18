@@ -1,9 +1,8 @@
 #!/bin/bash
 
-function service_status() {
-
-        status=sudo systemctl is-active $1
-        echo $status
-}
-
-service_status $1
+service=$1
+if ! systemctl is-active -quiet $service ; then
+        systemctl start $service
+else
+        echo "Service is running"
+fi
