@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # CPU Usage
-cpu_usage=$( top -bn1 | awk 'NR==3 {print 100 - $8}' )
+cpu_usage=$( top -bn1 | awk 'NR==3 {print 100 - $8}' ) #bn1 -> batch, number of iterations
 echo "CPU Usage: ${cpu_usage}%"
 echo "============================"
 
@@ -31,4 +31,5 @@ echo "============================"
 # Load Average
 load_average=$( uptime | awk '{printf "Under 1, 5 and 15 minutes: %.2f %.2f %.2f\n", $9, $10, $11 }' )
 echo "$load_average"
+
 
